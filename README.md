@@ -155,8 +155,7 @@ For support:
 - Contact system administrator
 - Check documentation updates
 
-## License
-[Your License Type]
+
 
 ## Version History
 - 1.0.0: Initial release
