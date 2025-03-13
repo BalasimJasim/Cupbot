@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background circle with gradient -->
+    <defs>
+        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    
+    <!-- Background circle -->
+    <circle cx="100" cy="100" r="90" fill="none" stroke="url(#logoGradient)" stroke-width="6"/>
+    
+    <!-- Cup group - moved up slightly -->
+    <g transform="translate(0, -10)">
+        <!-- Cup body with gradient fill -->
+        <path d="M65,75 
+                 C65,75 70,73 85,73 
+                 L115,73 
+                 C130,73 135,75 135,75
+                 L130,115 
+                 C130,120 125,123 115,123
+                 L85,123
+                 C75,123 70,120 70,115
+                 Z" 
+              fill="url(#logoGradient)" 
+              fill-opacity="0.1"
+              stroke="url(#logoGradient)" 
+              stroke-width="4"/>
+        
+        <!-- Cup handle -->
+        <path d="M135,85 
+                 C150,85 150,95 150,100
+                 C150,105 150,115 135,115" 
+              fill="none" 
+              stroke="url(#logoGradient)" 
+              stroke-width="4"
+              stroke-linecap="round"/>
+        
+        <!-- Multiple steam lines -->
+        <g stroke="url(#logoGradient)" stroke-width="3" stroke-linecap="round">
+            <path d="M85,65 Q95,55 105,65">
+                <animate attributeName="d" 
+                         dur="2s" 
+                         repeatCount="indefinite"
+                         values="M85,65 Q95,55 105,65;
+                                M85,63 Q95,53 105,63;
+                                M85,65 Q95,55 105,65"/>
+            </path>
+            <path d="M100,60 Q110,50 120,60">
+                <animate attributeName="d"
+                         dur="2s"
+                         repeatCount="indefinite"
+                         values="M100,60 Q110,50 120,60;
+                                M100,58 Q110,48 120,58;
+                                M100,60 Q110,50 120,60"
+                         begin="1s"/>
+            </path>
+        </g>
+    </g>
+    
+    <!-- Text "Cupbot" with modern styling -->
+    <text x="100" y="155" 
+          font-family="'Segoe UI', Arial, sans-serif" 
+          font-size="28" 
+          font-weight="600" 
+          fill="url(#logoGradient)" 
+          text-anchor="middle"
+          letter-spacing="1">
+        Cupbot
+    </text>
+</svg> 

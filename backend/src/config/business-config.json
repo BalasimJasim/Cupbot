@@ -1,0 +1,184 @@
+{
+  "name": "Bella Italia Restaurant",
+  "ownerId": "bella_italia_owner",
+  "description": "Welcome to Bella Italia! We serve authentic Italian cuisine with passion and tradition. From handmade pasta to wood-fired pizzas, experience the true taste of Italy.",
+  "menu": {
+    "categories": [
+      {
+        "name": "Antipasti",
+        "items": [
+          {
+            "name": "Bruschetta",
+            "description": "Grilled bread with tomatoes, garlic, and basil",
+            "price": 8.99
+          },
+          {
+            "name": "Caprese",
+            "description": "Fresh mozzarella, tomatoes, and basil",
+            "price": 10.99
+          }
+        ]
+      },
+      {
+        "name": "Pasta",
+        "items": [
+          {
+            "name": "Spaghetti Carbonara",
+            "description": "Classic carbonara with pancetta and egg",
+            "price": 16.99
+          },
+          {
+            "name": "Fettuccine Alfredo",
+            "description": "Creamy parmesan sauce",
+            "price": 15.99
+          }
+        ]
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Table Reservation",
+      "description": "Reserve a table for your desired time",
+      "price": 0,
+      "duration": 120,
+      "options": {
+        "minGuests": 1,
+        "maxGuests": 6,
+        "requiresDeposit": false
+      }
+    },
+    {
+      "name": "Private Dining",
+      "description": "Private dining room for special occasions",
+      "price": 200,
+      "duration": 180,
+      "options": {
+        "minGuests": 8,
+        "maxGuests": 20,
+        "requiresDeposit": true,
+        "depositAmount": 100
+      }
+    },
+    {
+      "name": "Catering Service",
+      "description": "Full catering service for events and parties",
+      "price": 500,
+      "duration": 240,
+      "options": {
+        "minGuests": 20,
+        "maxGuests": 100,
+        "requiresAdvanceNotice": 72,
+        "includesSetup": true
+      }
+    },
+    {
+      "name": "Cooking Class",
+      "description": "Learn to cook authentic Italian dishes with our chef",
+      "price": 75,
+      "duration": 150,
+      "options": {
+        "minParticipants": 4,
+        "maxParticipants": 12,
+        "includesIngredients": true,
+        "skillLevel": "beginner"
+      }
+    }
+  ],
+  "workingHours": [
+    {
+      "day": "Monday",
+      "open": "11:30",
+      "close": "22:00",
+      "isOpen": true,
+      "breakTime": {
+        "start": "15:00",
+        "end": "16:00"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "open": "11:30",
+      "close": "22:00",
+      "isOpen": true,
+      "breakTime": {
+        "start": "15:00",
+        "end": "16:00"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "open": "11:30",
+      "close": "22:00",
+      "isOpen": true,
+      "breakTime": {
+        "start": "15:00",
+        "end": "16:00"
+      }
+    },
+    {
+      "day": "Thursday",
+      "open": "11:30",
+      "close": "23:00",
+      "isOpen": true,
+      "breakTime": {
+        "start": "15:00",
+        "end": "16:00"
+      }
+    },
+    {
+      "day": "Friday",
+      "open": "11:30",
+      "close": "23:00",
+      "isOpen": true,
+      "breakTime": {
+        "start": "15:00",
+        "end": "16:00"
+      }
+    },
+    {
+      "day": "Saturday",
+      "open": "12:00",
+      "close": "23:00",
+      "isOpen": true,
+      "breakTime": null
+    },
+    {
+      "day": "Sunday",
+      "open": "12:00",
+      "close": "21:00",
+      "isOpen": true,
+      "breakTime": null
+    }
+  ],
+  "contactInfo": {
+    "phone": "+1-555-123-4567",
+    "email": "info@bellaitalia.com",
+    "address": "123 Italian Street, Foodville, FD 12345",
+    "socialMedia": {
+      "facebook": "bellaitalia.fb",
+      "instagram": "bellaitalia_official",
+      "twitter": "bellaitalia"
+    }
+  },
+  "settings": {
+    "autoReply": true,
+    "welcomeMessage": "🍝 Benvenuti a Bella Italia! How may we assist you today?\n\nUse these commands:\n/menu - View our menu\n/book - Reserve a table\n/info - Restaurant information\n/order - Place a takeout order\n/specials - View today's specials",
+    "notificationEmail": "notifications@bellaitalia.com",
+    "languages": ["en", "it"],
+    "currency": "USD",
+    "timeZone": "America/New_York",
+    "reservationSettings": {
+      "maxDaysInAdvance": 30,
+      "minNoticeHours": 2,
+      "maxTableSize": 6,
+      "autoConfirm": false
+    },
+    "orderSettings": {
+      "minimumOrder": 20,
+      "deliveryRadius": 5,
+      "deliveryFee": 5,
+      "freeDeliveryOver": 50
+    }
+  }
+} 

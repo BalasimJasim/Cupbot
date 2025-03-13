@@ -1,0 +1,50 @@
+{
+  "name": "telegram-business-bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot for local businesses to automate customer interactions",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "powershell -File start.ps1",
+    "dev:unsafe": "ts-node-dev --respawn src/server.ts",
+    "safe-start": "powershell -File start.ps1",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "init-db": "ts-node src/scripts/initBusiness.ts",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "business",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/date-fns": "^2.5.3",
+    "axios": "^1.7.9",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3",
+    "openai": "^4.83.0",
+    "telegraf": "^4.12.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.8",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "eslint": "^8.37.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.3"
+  }
+}

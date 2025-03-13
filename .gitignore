@@ -1,0 +1,13 @@
+
+# Node modules
+/node_modules
+
+# Build artifacts
+/.next/
+/out/
+/build
+
+# Environment files
+.env*
+
+instructions.md
